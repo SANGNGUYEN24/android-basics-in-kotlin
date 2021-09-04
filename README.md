@@ -240,7 +240,7 @@ Moshi matches the keys in a JSON response with properties in a data object that 
 
 https://user-images.githubusercontent.com/78266241/132085494-51f446d8-251c-404a-9d84-fd1c870670a8.mp4
 
-## 8. ParskDatabase App & BusScheduling App
+## 8. ParksDatabase App & BusScheduling App
 
 **What I learned**
 
