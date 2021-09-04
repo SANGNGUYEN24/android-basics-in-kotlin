@@ -65,7 +65,36 @@ This app calculates tip based on the amount of money and the percentage of the t
 
 https://user-images.githubusercontent.com/78266241/132077626-691beafc-4559-4780-ae85-1fa36bddd3e3.mp4
 
-##
+## 3. Affirmation
+This app displays a list of landscape pictures using `RecycleView`
+
+- There are two types of lists in Kotlin: `List` and `MutableList`.
+- A List is read-only and cannot be modified once it has been initialized. However, I can apply operations such as `sorted()` and `reversed()` which return a new list without changing the original.
+- A `MutableList` can be modified after creation such as adding, removing, or modifying elements.
+- I can add a list of items to a **mutable list** using `addAll()`.
+---
+> I believe displaying a list in Flutter is easier than it in Android :)) bruh
+
+- `RecyclerView` widget helps you display a list of data.
+- `RecyclerView` uses the adapter pattern to adapt and display the data.
+- `ViewHolder` creates and holds the views for `RecyclerView`.
+- `RecyclerView` comes with built in `LayoutManagers`. `RecyclerView` delegates how items are laid out to `LayoutManagers`.
+
+To implement the adapter:
+
+- Create a new class for the adapter, for example, `ItemAdapter`.
+- Create a custom `ViewHolder` class that represents a single list item view. Extend from `RecyclerView.ViewHolder` class.
+- Modify the `ItemAdapter` class to extend from the `RecyclerView.Adapter` class with the custom `ViewHolder` class.
+- Implement these methods within the adapter: `getItemsCount()`, `onCreateViewHolder()`, and `onBindViewHolder()`.
+---
+- To display additional content in a RecyclerView, modify the underlying data model class and data source. Then update the list item layout and adapter to set that data onto the views.
+- Use resource annotations (`@StringRes val stringResourceId: Int`, `@DrawableRes val imageResourceId: Int`) to help ensure that the right type of resource ID is passed into a class constructor.
+- Use `MaterialCardView` to display content in a Material card.
+
+https://user-images.githubusercontent.com/78266241/132078854-4bbc30e7-e146-4877-98ed-2418af7785e9.mp4
+
+## 4. 
+
 
 
 
